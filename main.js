@@ -38,9 +38,10 @@ const letters = {
 
 
 const englishToMorseCode = () => {
-    
+   
     const englishBox = document.getElementById("input").value;
-    const wordBox = englishBox.split("");   
+    const newEnglishBox = englishBox.toLowerCase();
+    const wordBox = newEnglishBox.split("");   
     const newArray = wordBox.map((letter) => {
         const morseLetter = letters[letter];
         return morseLetter;
