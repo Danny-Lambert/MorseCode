@@ -1,54 +1,20 @@
-const letters = { 
-    a: ".- ",
-    b: "-... ",
-    c: "-.-. ",
-    d: "-.. ",
-    e: ". ",
-    f: "..-. ",
-    g: "--. ",
-    h: ".... ",
-    i: ".. ",
-    j: ".--- ",
-    k: "-.- ",
-    l: ".-.. ",
-    m: "-- ",
-    n: "-. ",
-    o: "--- ",
-    p: ".--. ",
-    q: "--.- ",
-    r: ".-. ",
-    s: "... ",
-    t: "- ",
-    u: "..- ",
-    v: "...- ",
-    w: ".-- ",
-    x: "-..- ",
-    y: "-.-- ",
-    z: "--.. ",
-    ' ' : "/",
-    one: ".---- ",
-    two: "..--- ",
-    three: "...-- ",
-    four: "....- ",
-    five: "..... ",
-    six: "-.... ",
-    seven: "--... ",
-    eight: "---..",
-}
+import letters from "../assets/scripts/data.js";
 
 
 const englishToMorseCode = () => {
-   
+    
     const englishBox = document.getElementById("input").value;
-    const newEnglishBox = englishBox.toLowerCase();
-    const wordBox = newEnglishBox.split("");   
+    // const newEnglishBox = englishBox.toLowerCase();
+    const wordBox  = englishBox.toLowerCase().split(""); 
+    console.log(wordBox);
     const newArray = wordBox.map((letter) => {
         const morseLetter = letters[letter];
         return morseLetter;
     })          
-    outputWord = newArray.join("");
+    let outputWord = newArray.join("");
+    console.log(outputWord);
     document.getElementById("morse_Box").innerHTML = outputWord;
-
+    
 }
 
 

@@ -1,0 +1,23 @@
+{
+  "name": "morse_code_translator",
+  "version": "1.0.0",
+  "description": "A Morse Code to English translator which uses HTML and JavaScript",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danny-Lambert/MorseCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danny-Lambert/MorseCode/issues"
+  },
+  "homepage": "https://github.com/Danny-Lambert/MorseCode#readme",
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "jest": "^26.6.3"
+  }
+}
