@@ -9,7 +9,7 @@ html,body
 body {    
   background-image: url(/assets/images/morsebackground.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   font-size: 70%;
   text-align: center;
   color: white;
