@@ -7,9 +7,9 @@ html,body
     /* overflow-x: hidden;  */
 }
 body {    
-  background-image: url(morsebackground.jpg);
+  /* background-image: url(morsebackground.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   font-size: 70%;
   text-align: center;
   color: white;
