@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
+
 html,body
 {
     width: 100%;
@@ -19,27 +21,26 @@ body {
 header {
   background-color: #258daf;
   text-align: center;
-  font-size: 400%;
+  font-size: 5rem;
 }
-h1{
-  margin-top: 4%;
+.contentTitle{
+  font-size: 1.5rem;
+  
 }
-
 #inputAndOutputBox {
-  padding-top: 30px;
-  align-items: center;
-  display: grid;
-  width: 40%;
-  margin-top: 7%;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: center;
-  text-align: center;
-  margin-left: 30%;
-  border: none;
-  opacity: 1;
+  height: 100;
 }
-
+.card{
+  background: #fffffff5 !important;
+}
+.contentAligner{
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
 #myButton {
   background-color: grey;
   border: 3px solid black;
@@ -53,3 +54,8 @@ h1{
   opacity: 1;
 }
 
+.inputBoxHeight{
+  height:10rem;
+  width: 30%;
+  margin-top:1rem
+}

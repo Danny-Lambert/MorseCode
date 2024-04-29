@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+>
     <title>Morse Code Translator</title>
     <link rel="stylesheet" href="./styles.css">
     <style>
         body {
-            background-image: url(morsebackground.jpg);
+            background-image: url(/images/morsebackground2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -15,12 +19,15 @@
 </head>
 <body>
     <header>Morse Code Translator</header>
-    
-    <h1>Input your word or message in the box, click the button and see it translate into morse code </h1>       
-        <div id="inputAndOutputBox">
-            <textarea type="type" id="input" name="input" placeholder="Type english here" cols="30" rows="10"></textarea>
-            <button id="translate_Button">Click here to translate to Morse-Code</button>
-            <textarea id="morse_Box" cols="30" rows="10" placeholder="See your morse code here"></textarea>
+        <div class="row contentAligner">
+            <div class="card p-5 m-5">
+                <h1 class="contentTitle mt-2">Input your word or message in the box, click the button and see it translate into morse code </h1>       
+                <div id="inputAndOutputBox">
+                    <textarea type="type" class="input inputBoxHeight mx-3" id="input" name="input" placeholder="Type english here" cols="30" rows="10"></textarea>
+                    <button id="translate_Button" class="button my-3">Translate</button>
+                    <textarea id="morse_Box" class="input inputBoxHeight mx-3" cols="30" rows="10" placeholder="See your morse code here"></textarea>
+                </div>
+            </div>
         </div>
 
 
